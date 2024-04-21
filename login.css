@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;400&family=Ubuntu&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.login-box {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  right: -45rem;
+  top: 3rem;
+  background-color: white;
+  max-width: 350px;
+  height: 430px;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.2);
+}
+.login-box img {
+  top: 20px;
+  position: absolute;
+  width: 180px;
+  height: 85px;
+  background-size: cover;
+}
+.login-box .form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.form input {
+  outline: none;
+  border-radius: 15px;
+  margin: 3px 0px;
+  padding: 5px;
+  height: 40px;
+  width: 250px;
+  border-radius: 1px;
+  border: 1px solid rgb(182, 181, 181);
+}
+
+input:focus::placeholder {
+  font-size: 11px;
+  transform: translateY(-12px);
+  transition: 0.4s ease-in-out;
+}
+input:not(:focus)::placeholder {
+  font-size: 11px;
+  transform: translateY(0px);
+  transition: 0.4s ease-in-out;
+}
+
+input::placeholder {
+  color: rgb(179, 179, 179);
+  font-size: 11px;
+}
+input[type="submit"] {
+  color: white;
+  background-color: #3ca2e6;
+  height: 30px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+input::placeholder:valid {
+  font-size: 10px;
+}
+
+.login-box .MoreContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+.MoreContent .h {
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  color: #8e8e8e;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  right: -105px;
+}
+.MoreContent .h::before {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 21px;
+  color: #cfcfcf;
+  border-bottom: 1px solid;
+  top: -13px;
+  left: -50px;
+}
+.MoreContent .h::after {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 21px;
+  color: #cfcfcf;
+  border-bottom: 1px solid;
+  top: -13px;
+  left: 123px;
+}
+
+.facebookLogin .h2 {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  bottom: 25px;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  right: 28px;
+}
+.facebookLogin .h2 a {
+  color: #525e8a;
+  text-decoration: none;
+  word-spacing: 2px;
+}
+.facebookLogin i {
+  font-size: 20px;
+}
+.forgotPass {
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: 35px;
+  right: -14px;
+  z-index: 5;
+}
+.forgotPass a {
+  color: #414d79;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.MoreContentFirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 70px;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.2);
+  top: 13rem;
+  font-size: 15px;
+}
+.MoreContentFirst h a {
+  color: #3699db;
+  text-decoration: none;
+}
+
+.MoreContent3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 20px;
+  top: 13.5rem;
+  font-size: 15px;
+}
+
+.socialWeb {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  top: 13rem;
+}
+.socialWeb img {
+  width: 111px;
+  height: 38px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  left: 20px;
+}
+.socialWebGoogle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  top: 13rem;
+}
+.socialWebGoogle img {
+  width: 130px;
+  height: 38px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  left: -123px;
+}
+
+.image-area {
+  position: relative;
+  bottom: 25rem;
+  left: 15rem;
+  z-index: 50;
+}
+.image-area .changedImages {
+  position: relative;
+}
+.changedImages .screenOne {
+  position: absolute;
+}
+.changedImages .screenTwo {
+  position: absolute;
+}
+
+.image-area .changedImages {
+  position: absolute;
+  left: 115px;
+  top: 29px;
+}
+.changedImages img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+}
